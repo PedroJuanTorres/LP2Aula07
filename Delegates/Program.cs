@@ -8,7 +8,8 @@ namespace Delegates
         {
             Joiner joinObject = new Joiner("Para");
 
-            MyDelegate stringFormat = PrintUpper;
+            //MyDelegate stringFormat = PrintUpper;
+            Action<string> stringFormat = PrintUpper;
             stringFormat += PrintLower;
             stringFormat += joinObject.JoinAndPrint;
 
